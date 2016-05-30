@@ -13,23 +13,23 @@ import java.util.UUID;
 public class EnvController {
 
 
-    @ExtDirectMethod
+    @ExtDirectMethod(group = "simple")
     public String doEcho(String string) {
         return string;
     }
 
-    @ExtDirectMethod
+    @ExtDirectMethod(group = "simple")
     public Long randomLong() {
         return new Double(Math.random() * Long.MAX_VALUE).longValue();
     }
 
-    @ExtDirectMethod
+    @ExtDirectMethod(group = "simple")
     public String doEcho(String message, HttpServletRequest request) {
         //do something with the request
         return message;
     }
 
-    @ExtDirectMethod
+    @ExtDirectMethod(group = "simple")
     public String randomUUID(){
         return UUID.randomUUID().toString();
     }

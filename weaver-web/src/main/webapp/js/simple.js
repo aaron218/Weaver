@@ -35,16 +35,16 @@ Ext.onReady(function() {
         });
         main.body.scroll('b', 100000, true);
     }
-
-    Ext.direct.Manager.addProvider(Ext.app.REMOTING_API, {
-        type: 'polling',
-        url: Ext.app.POLLING_URLS.message,
-        listeners: {
-            data: function(provider, event) {
-                updateMain('<i>' + event.data + '</i>');
-            }
-        }
-    });
+    //
+    //Ext.direct.Manager.addProvider(Ext.app.REMOTING_API, {
+    //    type: 'polling',
+    //    url: Ext.app.POLLING_URLS.message,
+    //    listeners: {
+    //        data: function(provider, event) {
+    //            updateMain('<i>' + event.data + '</i>');
+    //        }
+    //    }
+    //});
 
     var es = new EventSource("../testsse");
     es.addEventListener('message', function(event) {
