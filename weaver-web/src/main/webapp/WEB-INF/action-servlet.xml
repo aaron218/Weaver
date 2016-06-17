@@ -14,15 +14,15 @@
     </bean>
 
     <bean id="extDirectSpringConfiguration" class="ch.ralscha.extdirectspring.controller.Configuration" p:timeout="12000"
-          p:maxRetries="10" p:enableBuffer="false">
-        <property name="exceptionToMessage">
-            <map>
-                <entry key="java.lang.IllegalArgumentException" value="illegal argument" />
-                <entry key="org.springframework.beans.factory.NoSuchBeanDefinitionException">
-                    <null />
-                </entry>
-            </map>
-        </property>
+          p:maxRetries="13" p:enableBuffer="false">
+        <!--<property name="exceptionToMessage">-->
+            <!--<map>-->
+                <!--<entry key="java.lang.IllegalArgumentException" value="illegal argument" />-->
+                <!--<entry key="org.springframework.beans.factory.NoSuchBeanDefinitionException">-->
+                    <!--<null />-->
+                <!--</entry>-->
+            <!--</map>-->
+        <!--</property>-->
     </bean>
 
 </beans>

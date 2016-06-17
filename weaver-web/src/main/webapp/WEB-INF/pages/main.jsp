@@ -12,7 +12,7 @@
 <script type="text/javascript" src="scripts/ext-all-debug.js"></script>
 <script type="text/javascript" src="action/api-debug.js"></script>
 
-<%--<script type="text/javascript" src="action/api.js"></script>--%>
+<script type="text/javascript" src="action/api.js"></script>
 <%--<script type="text/javascript" src="scripts/ext-all.js"></script>--%>
 
 

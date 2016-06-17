@@ -16,7 +16,6 @@
     Ext.Msg.alert('ExtJs' ,'这是一个ExtJs的对话框。');
     });
 
-
 </script>
 
 </body>
