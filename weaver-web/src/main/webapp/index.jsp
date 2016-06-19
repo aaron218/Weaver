@@ -10,13 +10,7 @@
 <head>
     <title>Title</title>
 </head>
+<script type="text/javascript" src="js/simple.js"></script>
 <body>
-<script>
-    Ext.onReady(function(){
-    Ext.Msg.alert('ExtJs' ,'这是一个ExtJs的对话框。');
-    });
-
-</script>
-
 </body>
 </html>

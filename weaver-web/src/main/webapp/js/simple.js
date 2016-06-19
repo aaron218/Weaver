@@ -1,6 +1,7 @@
 Ext.require([ 'Ext.direct.*', 'Ext.panel.Panel', 'Ext.form.field.Text', 'Ext.toolbar.TextItem' ]);
 
 Ext.onReady(function() {
+    Ext.Direct.addProvider(Ext.app.REMOTING_API);
 
     function doEcho(field) {
         testAction.doEcho(field.getValue(), function(result, event) {
@@ -35,7 +36,7 @@ Ext.onReady(function() {
         });
         main.body.scroll('b', 100000, true);
     }
-    //
+
     //Ext.direct.Manager.addProvider(Ext.app.REMOTING_API, {
     //    type: 'polling',
     //    url: Ext.app.POLLING_URLS.message,
@@ -46,10 +47,10 @@ Ext.onReady(function() {
     //    }
     //});
 
-    var es = new EventSource("../testsse");
-    es.addEventListener('message', function(event) {
-        updateMain('<i>' + event.data + '</i>');
-    }, false);
+    //var es = new EventSource("../testsse");
+    //es.addEventListener('message', function(event) {
+    //    updateMain('<i>' + event.data + '</i>');
+    //}, false);
 
     var main = Ext.create('Ext.panel.Panel', {
         id: 'logger',

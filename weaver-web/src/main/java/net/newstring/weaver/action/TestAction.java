@@ -13,18 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.newstring.weaver;
+package net.newstring.weaver.action;
 
 import ch.ralscha.extdirectspring.annotation.ExtDirectMethod;
 import ch.ralscha.extdirectspring.annotation.ExtDirectMethodType;
 import ch.ralscha.extdirectspring.bean.ExtDirectFormPostResult;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.concurrent.TimeUnit;
 
 @Service
-@Component
 public class TestAction {
 
     @ExtDirectMethod(group = "example")
@@ -54,11 +53,6 @@ public class TestAction {
         ExtDirectFormPostResult result = new ExtDirectFormPostResult(true);
         result.addResultProperty("msg", name.toUpperCase());
         return result;
-    }
-
-    @ExtDirectMethod
-    public long multiply(long num) {
-        return num * 8;
     }
 
 }

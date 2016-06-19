@@ -10,13 +10,14 @@
 </head>
 <link rel="stylesheet" type="text/css" href="scripts/ext-all.css"/>
 <script type="text/javascript" src="scripts/ext-all-debug.js"></script>
+<%--<link rel="stylesheet" type="text/css" href="resources/extjs/resources/css/ext-all.css" />--%>
+<%--<script type="text/javascript" src="resources/extjs/ext-all-debug.js" ></script>--%>
 <script type="text/javascript" src="action/api-debug.js"></script>
-
-<script type="text/javascript" src="action/api.js"></script>
+<%--<script type="text/javascript" src="action/api.js"></script>--%>
 <%--<script type="text/javascript" src="scripts/ext-all.js"></script>--%>
 
 
-<script type="text/javascript" src="action/api-debug.js?group=simple&actionNs=Example"></script>
+<script type="text/javascript" src="action/api-debug.js?group=example"></script>
 
 <body>
 </body>
