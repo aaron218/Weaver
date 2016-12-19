@@ -11,5 +11,13 @@
 
     <artifactId>weaver-core</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpasyncclient</artifactId>
+            <version>LATEST</version>
+        </dependency>
+    </dependencies>
+
 
 </project>
